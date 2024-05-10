@@ -17,7 +17,7 @@ export function RegisterPage() {
 
             {registerData?.error && (
               <ul className="error-messages">
-                {registerData.error.errors.body.map((error) => (
+                {registerData.error.errors?.body?.map((error) => (
                   <li key={error}>{error}</li>
                 ))}
               </ul>
